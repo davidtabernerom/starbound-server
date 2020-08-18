@@ -12,3 +12,15 @@ After building the docker file you can run the image for the first time with :
 - You need to disable steamguard or steamCMD won't be able to log in and download starbound
 - The server auto update at each restart.
 - might take a while to download the game on first run, check docker logs for download %
+
+
+---
+
+
+## Edit
+
+STEAM_USERNAME=username
+STEAM_PASSWORD=password
+
+Update: './server_update'
+Run: './server_start'
