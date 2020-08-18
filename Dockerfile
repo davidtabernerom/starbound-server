@@ -34,4 +34,4 @@ VOLUME      ["/server/steamcmd/starbound"]
 #ENTRYPOINT  ["/server/steamcmd/server_start"]
 
 WORKDIR '/server/steamcmd'
-CMD  ["./server_update"]
+CMD ['sleep', '5']
