@@ -10,9 +10,9 @@ WORKDIR	"${STEAMCMDDIR}"
 VOLUME	"${STARBOUND_PATH}"
 
 
-COPY	["./start.sh", "."]
-COPY	["./steam.cmd", "."]
-COPY	["./update.sh", "."]
+COPY	["--chown=steam"] ["./start.sh", "."]
+COPY	["--chown=steam"] ["./steam.cmd", "."]
+COPY	["--chown=steam"] ["./update.sh", "."]
 
 
 RUN		["chmod", "+x", "./start.sh"]
